@@ -1,0 +1,55 @@
+/* html {
+  height: 100%;
+} */
+
+.footer {
+  position: sticky;
+  /* min-width: 100%; */
+  height: 130px;
+  top: 100%;
+  background-color: #333333;
+}
+
+.suivreFooter {
+  color: black;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-left: 70px;
+}
+
+.contacts {
+  font-family: "Inria Sans", sans-serif;
+  font-size: smaller;
+  padding-right: 3em;
+  padding-left: 3em;
+  text-transform: uppercase;
+}
+
+.contactFooter {
+  float: right;
+  font-size: 30px;
+  margin-right: 70px;
+}
+
+link,
+a {
+  color: rgb(204, 161, 42);
+}
+
+link:hover,
+.facebookFooter:hover,
+.instagramFooter:hover,
+.contactFooter:hover {
+  color: rgb(209, 71, 29);
+  text-decoration: none;
+}
+
+.facebookFooter,
+.instagramFooter {
+  text-transform: uppercase;
+  /* float: right; */
+  min-width: 100%;
+  padding-left: 3em;
+  font-size: small;
+  margin-left: 70px;
+}

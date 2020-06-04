@@ -1,0 +1,93 @@
+.menu {
+  z-index: 10000;
+  height: 100px;
+  width: 100%;
+  background-color: #333333;
+  position: sticky;
+  display: flex;
+  justify-content: row;
+  top: 0px;
+}
+
+.navh2 {
+  font-family: "Inria Sans, sans-serif";
+  font-weight: bold;
+  font-style: italic;
+  padding-left: 20px;
+}
+
+.titre {
+  width: 30%;
+  margin: auto;
+}
+.titre .navh2 {
+  color: rgb(204, 161, 42);
+  text-decoration: none;
+}
+.navh2:hover {
+  color: rgb(209, 71, 29);
+  text-decoration: none;
+}
+
+.recherche {
+  width: 50%;
+  margin: auto;
+  font-family: "Inria Sans, sans-serif";
+}
+
+.connexion {
+  width: 20%;
+  margin: auto;
+  text-align: center;
+  font-family: "Inria Sans, sans-serif";
+}
+
+.recherche input {
+  width: 600px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.connexion button {
+  border-radius: 15px;
+  font-family: "Inria Sans, sans-serif";
+  background-color: rgb(204, 161, 42);
+  color: white;
+  outline: 0;
+}
+.connexion button:hover {
+  background-color: rgb(209, 71, 29);
+}
+
+.contact button {
+  background-color: rgb(204, 161, 42);
+  color: white;
+  /* font-family: "Inria Sans, sans-serif"; */
+  border-radius: 15px;
+  outline: 0;
+}
+.contact button:hover {
+  background-color: rgb(209, 71, 29);
+}
+.contact {
+  margin: auto;
+}
+.lien:hover {
+  text-decoration: none;
+}
+.posteRecette button {
+  border-radius: 15px;
+  background-color: rgb(204, 161, 42);
+  color: white;
+  outline: 0;
+}
+.posteRecette button:hover {
+  background-color: rgb(209, 71, 29);
+}
+.posteRecette {
+  margin: auto;
+  margin-left: 30px;
+}
+.recherche {
+  text-decoration: none;
+}

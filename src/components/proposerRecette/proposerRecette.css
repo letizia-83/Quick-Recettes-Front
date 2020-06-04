@@ -1,0 +1,19 @@
+p,
+.recette {
+  font-family: "Comic Neue", cursive;
+  font-weight: bold;
+}
+.bt1,
+.bt2 {
+  margin: 20px;
+}
+::placeholder .titre {
+  text-align: center;
+}
+#container1 {
+  background-image: url("/img/arriere-plan.jpg");
+  min-height: calc(100vh - 100px);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}

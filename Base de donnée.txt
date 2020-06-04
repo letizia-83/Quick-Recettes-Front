@@ -1,0 +1,124 @@
+1----La barre de recherche qui pointe (GET) vers base des données pour afficher.
+
+
+
+
+
+2---- Les commentaires des recettes qui pointe vers la base des données (post) pour les enregistrer et en (GET) pour les afficher.
+**POST -----
+	    storeCommitsOnDataBase: (req, res, next)=>{
+            const commitsData = req.body;
+            const newCommitRequest = new commitRequest({
+            name: commitsData.name,
+            commentaire: commitsData.message,
+	    
+        })
+        newRecetteRequest.save((err)=>{
+            if (err){
+                console.log(err);
+                res.status(500).render("index", {
+                    contactMessage: "Une erreur s'est produite",
+                })
+            }else{
+                res.render("index", {
+                    message: "Merci pour votre votre post",
+                })
+            }
+        });
+    }
+**** GET 
+
+?????????
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+3---- L'enregistrement des profiles (POST) et en (GET) pour afficher le prénon dans la navbarre.
+ **POST
+  	    storeUsersOnDataBase: (req, res, next)=>{   ////instancier un objet (schéma de l'enregistrement)
+            const usersFormData = req.body;             /// Déclarer une variable qui récupère req.data 
+            const newUser = new RecetteRequest({        /// déclarer un objet depuis le constructeur 
+            name: usersFormData.name,                   /// 
+            mail: usersFormData.mail,
+            passWord: usersFormData.passWord,
+	    
+        })
+        storeUsersOnDataBase.save((err)=>{                            //// Il faut absolument faire un retour pour éviter le chargement en continue
+            if (err){                                                 ///en cas d'erreur
+                console.log(err);
+                res.status(500).render("index", {
+                    contactMessage: "Une erreur s'est produite",
+                })
+            }else{
+                res.render("index", {
+                    message: "Merci pour votre votre inscription",  /// En cas d'enregistrement message de retour
+                })
+            }
+        });
+    }
+**** GET 
+
+?????????
+4----L'enregistrement(POST) des recettes proposés dans la base des données et les afficher (GET) dans carrousselle.
+ ***POST
+	    storeRecetteOnDataBase: (req, res, next)=>{
+            const recetteFormData = req.body;
+            const newRecetteRequest = new recetteRequest({
+            ingredient1: recetteFormData.ingredient1,
+            ingredient2: recetteFormData.ingredient2,
+            ingredient3: recetteFormData.ingredient3,
+	    ingredient4: recetteFormData.ingredient4,
+	    ingredient5: recetteFormData.ingredient5,
+	    recipe1: recetteFormData.recipe1,
+	    recipe2: recetteFormData.recipe2,
+	    recipe3: recetteFormData.recipe3,
+	    recipe4: recetteFormData.recipe4,
+	    recipe5: recetteFormData.recipe5,
+	    commentaire : [{
+ 	    name: commitsData.name,
+            commentaire: commitsData.message,
+	    }]
+	    
+	    
+        })
+        newRecetteRequest.save((err)=>{
+            if (err){
+                console.log(err);
+                res.status(500).render("index", {
+                    contactMessage: "Une erreur s'est produite",
+                })
+            }else{
+                res.render("index", {
+                    message: "Merci pour votre votre post",
+                })
+            }
+        });
+    }
+
+**** GET 
+
+?????????
+
+5----Formulaire de contacts (post) pour enregistrer les utilisateurs----------------------------------------
+
+	    storeContactOnDataBase: (req, res, next)=>{
+            const contacFormData = req.body;
+            const newRecetteRequest = new recetteRequest({
+            nom: contacFormData.nom,
+            prenom: contacFormData.prenom,
+            email: contacFormData.email,
+	    tel: contacFormData.tel,
+
+	    
+        })
+        storeContactOnDataBase.save((err)=>{
+            if (err){
+                console.log(err);
+                res.status(500).render("index", {
+                    contactMessage: "Une erreur s'est produite",
+                })
+            }else{
+                res.render("index", {
+                    message: "Merci pour votre votre inscription",
+                })
+            }
+        });
+    }

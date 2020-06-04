@@ -1,0 +1,19 @@
+.compte {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: row;
+}
+
+.seconnecter {
+  width: 30%;
+  margin: auto;
+  background-color: #b4b1b1;
+  border-radius: 10px;
+}
+.sinscrire {
+  width: 30%;
+
+  margin: auto;
+  background-color: #b4b1b1;
+  border-radius: 10px;
+}

@@ -1,0 +1,50 @@
+.recette-conteneur {
+  background-image: url("/img/burger2.jpg");
+  min-height: calc(100vh - 100px);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.rdj1 {
+  text-align: center;
+}
+.rdjTitle {
+  text-transform: uppercase;
+  font-family: "Inria Sans", sans-serif;
+  color: black;
+  padding-top: 60px;
+}
+
+.accroche {
+  font-family: "Comic Neue", cursive;
+  text-decoration: underline;
+}
+
+.rdjTitle,
+.recette,
+.accroche,
+.slogan {
+  text-align: center;
+  font-weight: bold;
+}
+
+.mainContenerButton {
+  display: block;
+  margin: auto;
+  border-radius: 10px;
+  color: white;
+  background-color: black;
+}
+
+.mainContenerButton:hover {
+  color: rgb(204, 161, 42);
+}
+
+.mainContenerButton:active,
+.mainContenerButton:focus {
+  background-color: rgb(204, 161, 42);
+  color: black;
+  outline-color: rgb(204, 161, 42);
+  outline-style: double;
+}
